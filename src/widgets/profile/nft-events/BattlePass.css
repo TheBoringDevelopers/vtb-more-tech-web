@@ -1,0 +1,35 @@
+.slick-prev,
+.slick-next
+{
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 20px;
+}
+
+.slick-next {
+    right: 20px;
+}
+
+.slick-dots {
+    display: flex!important;
+    justify-content: center;
+}
+
+.slick-dots li {
+    cursor: pointer;
+    padding: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+    opacity: 0.2;
+}
+
+.slick-dots li.slick-active {
+    opacity: 1;
+}
+

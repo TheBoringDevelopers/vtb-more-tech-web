@@ -1,0 +1,27 @@
+/* ---- Trainings ---- */
+.sidebar {
+    &__trainings {
+        &-item {
+            &:not(:last-of-type) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-date {
+            @include font-size(12px);
+            margin-bottom: 5px;
+            color: #B7B7B7;
+        }
+
+
+        &-title {
+            @include font-size(12px);
+            font-weight: 700;
+            color: #575656;
+
+            &:not(:last-of-type) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

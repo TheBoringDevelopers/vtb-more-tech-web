@@ -1,0 +1,120 @@
+@import 'helpers/rfs';
+
+/* ---- Font Face ---- */
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font-name);
+		src: url($path+".woff2") format("woff2"), url($path+".woff") format("woff"),
+			url($path+".otf") format("opentype"); // Safari, Android, iOS
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+/* ---- Media Queries ---- */
+@mixin mq($size: "480" , $type: "<", $size-next: null) {
+	@if ($type == ">") {
+		@media (min-width: #{$size}px) {
+			@content;
+		}
+	}
+
+	@if ($type == "<") {
+		@media (max-width: #{$size}px) {
+			@content;
+		}
+	}
+
+	@if ($type == "<>") {
+		@media screen and (min-width: #{$size}px) and (max-width: #{$size-next}px) {
+			@content;
+		}
+	}
+}
+
+/* ---- Reset Indents ---- */
+@mixin reset-indents() {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- Fade ---- */
+@mixin fade($status) {
+    @if $status == in {
+        opacity: 1;
+        pointer-events: visible;
+    }
+
+    @if $status == out {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    @include transition();
+}
+
+/* ---- Transition ---- */
+@mixin transition($delay: $transition-delay) {
+    transition: $transition-property $delay $transition-animation;
+}
+
+/* ---- Selection ---- */
+@mixin selection {
+    background: none;
+	color: $theme_color;
+	text-shadow: none;
+}
+
+/* ---- Background ---- */
+@mixin background($url, $overlay: false, $rgba: $bg-overlay-rgba) {
+    @if $overlay == true {
+        background: linear-gradient(0deg, $rgba, $rgba), url($url) $bg-propeties;
+    }
+
+    @if $overlay == false {
+        background: url($url) $bg-propeties;
+    }
+}
+
+/* ---- Flexible ---- */
+@mixin flexible {
+    display: flex;
+    align-items: center;
+}
+
+/* ---- Link Hover ---- */
+@mixin link-hover($opacity: $link-hover-opacity) {
+    opacity: $opacity;
+    @include transition();
+}
+
+/* ---- Background Opacity ---- */
+@mixin background-opacity($color, $opacity) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+/* ---- Full Stretch ---- */
+@mixin full-stretch {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* ---- Center Element ---- */
+@mixin center-element {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* ---- Center All Content ---- */
+@mixin center-all-content {
+	@include full-stretch();
+	@include flexible();
+	justify-content: center;
+	text-align: center;
+}

@@ -1,0 +1,14 @@
+/* ---- Message ---- */
+.message {
+    width: 100%;
+    padding: 43px 0 43px 43px;
+    background: #F8F8F8;
+    border-radius: 10px;
+
+    &__text {
+        @include font-size(22px);
+        font-weight: 600;
+        color: #2E2E2E;
+        max-width: 408px;
+    }
+}

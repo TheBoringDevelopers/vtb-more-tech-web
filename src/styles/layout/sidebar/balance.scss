@@ -1,0 +1,45 @@
+/* ---- Balance ---- */
+.sidebar {
+    &__balance {
+        @include flexible();
+        @include transition();
+        justify-content: space-between;
+        background: #FAFAFA;
+        padding: 14px;
+        border-radius: 4px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 10px;
+        }
+
+        &:hover {
+            @include link-hover();
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 11px;
+            @include background('/img/global/layout/sidebar/wallet/balance/arrow-icon.svg');
+        }
+
+        &-content {
+            @include flexible();
+        }
+
+        &-info {
+            margin-left: 10px;
+        }
+
+        &-text {
+            @include font-size(10px);
+            font-weight: 500;
+        }
+
+        &-sum {
+            @include font-size(16px);
+            font-weight: 600;
+        }
+    }
+}

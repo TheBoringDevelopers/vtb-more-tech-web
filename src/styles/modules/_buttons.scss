@@ -1,0 +1,17 @@
+/* ---- Buttons ---- */
+.blue-btn {
+    @include transition();
+    @include font-size(14px);
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 0;
+    background: $theme-color;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        @include transition();
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,75 @@
+/* ---- Side Bar ---- */
+.sidebar {
+    height: 100%;
+    padding: 16px;
+    background: #F5F5F5;
+
+    &__item {
+        border-radius: 10px;
+        background: #fff;
+        padding: 15px 20px 24px 20px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 23px;
+        }
+
+        &-top {
+            @include flexible();
+            justify-content: space-between;
+            margin-bottom: 14px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #F5F5F5;
+            font-weight: 700;
+
+            &.icon {
+                justify-content: flex-start;
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    @include background('/img/global/layout/sidebar/wallet/wallet-icon.svg');
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &-span {
+            @include flexible();
+        }
+
+        &-count {
+            color: #D3D3D3;
+            margin-left: 6px;
+        }
+
+        &-link {
+            @include flexible();
+            @include transition();
+            @include font-size(12px);
+            font-weight: 500;
+            color: #A1A1A1;
+
+            &:hover {
+                @include transition();
+                @include link-hover();
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                width: 3px;
+                height: 6px;
+                margin-left: 4px;
+                @include background('/img/global/layout/sidebar/link-arrow-icon.svg');
+            }
+        }
+    }
+}
+
+@import 'balance';
+@import 'buttons';
+@import 'drum';
+@import 'trainings';
+@import 'planning';
+@import 'services';

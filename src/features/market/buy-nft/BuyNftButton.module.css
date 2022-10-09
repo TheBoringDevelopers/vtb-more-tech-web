@@ -1,0 +1,18 @@
+.btnP {
+    width: 247.35px;
+    height: 43.3px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    background: #0542EE;
+    border: 1px solid #0542EE;
+    border-radius: 8px;
+}
+
+.btnP:disabled {
+    opacity: .1;
+}

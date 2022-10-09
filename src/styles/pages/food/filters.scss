@@ -1,0 +1,37 @@
+/* ---- Filters ---- */
+.food-filters {
+    @include flexible();
+    flex-wrap: wrap;
+
+    &__item {
+        @include font-size(16px);
+        @include transition();
+        font-weight: 600;
+        color: #1E1E1E;
+        opacity: 0.3;
+        cursor: pointer;
+        margin-top: 33px;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &.selected {
+            @include transition();
+            opacity: 1;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        &.next {
+            font-weight: 700;
+            margin-left: 15px;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 35px;
+        }
+    }
+}

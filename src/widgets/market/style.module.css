@@ -1,0 +1,257 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy.ttf');
+}
+
+.containerGen {
+  /**/
+}
+
+/* 412 */
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 122px 891px;
+  gap: 0 40px;
+}
+
+.block1 {
+  background-color: rgb(255, 255, 255);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.block3 {
+  background-color: rgb(255, 255, 255);
+}
+
+.block3 img {
+  object-fit: cover;
+}
+.block4 {
+  background-color: rgb(255, 255, 255);
+}
+
+.textOne {
+  display: block;
+  height: 18px;
+  margin-top: 42px;
+  margin-left: 1px;
+  color: rgba(0, 0, 0, 1);
+  opacity: 0.2;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.textOne:hover {
+  color: black;
+}
+
+.line {
+  width: 100%;
+}
+
+/* 
+.lineTwo {
+  position: absolute;
+  width: 100px;
+  height: 0px;
+  opacity: 1;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+} */
+
+.vl {
+  border-left: 1px solid rgba(20, 45, 64, 1);
+  height: 1013px;
+  position: absolute;
+  left: 84px;
+  margin-left: -3px;
+  top: 0;
+  opacity: 0.1;
+}
+
+.imgOne {
+  background: #F2F2F2;
+  border-radius: 10px;
+  width: 483px;
+  height: 483px;
+}
+
+.blockedOne {
+  display: flex;
+}
+
+.imgTwo {
+  width: 114px;
+  height: 114px;
+  border-radius: 10px;
+}
+
+.imgThree {
+  width: 114px;
+  height: 114px;
+  border-radius: 10px;
+  margin-left: 9px;
+}
+
+.infoOne {
+  font-family: 'Akrobat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C2CBCC;
+}
+
+.infoTwo {
+  margin-top: 45px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 7px;
+  color: #000000;
+}
+
+.infoThree {
+  margin-top: 78px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  line-height: 1rem;
+  color: #B0B0B0;
+  display: flex;
+}
+
+.infoFour {
+  margin-top: 32px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  line-height: 1rem;
+  color: #B0B0B0;
+  display: flex;
+}
+
+.infoFive {
+  margin-top: 32px;
+}
+
+.infoSex {
+  margin-top: 18px;
+  display: flex;
+}
+
+.infoSeven {}
+
+.textPrice {
+  width: 97px;
+  height: 8px;
+  margin-top: 4px;
+  margin-left: 7px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 7px;
+  color: #040404;
+}
+
+
+
+.btnK {
+  margin-left: 9.31px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  width: 247.35px;
+  height: 43.3px;
+  color: #0047FF;
+  text-align: center;
+  border: 1px solid #0542EE;
+  border-radius: 8px;
+}
+
+.lineFour {
+  margin-top: 45.7px;
+  width: 505px;
+}
+
+.textTwo {
+  width: 67px;
+  height: 18px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.podBlockOne {
+  width: 149px;
+  height: 200px;
+  background-color: #ffffff;
+  display: block;
+}
+
+.textParam {
+  line-height: 140%;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #C7C7C7;
+}
+
+.podBlockTwo {
+  width: 149px;
+  height: 200px;
+  margin-left: 123px;
+  background-color: #ffffff;
+  display: block;
+}
+
+.textParams {
+  line-height: 140%;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #5B5B5B;
+}
+
+.dopInfoOne {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.dopInfoTwo {
+  font-family: 'Gilroy';
+  font-style: normal;
+  max-width: 600px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #B0B0B0;
+}

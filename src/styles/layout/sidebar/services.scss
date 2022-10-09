@@ -1,0 +1,40 @@
+/* ---- Services ---- */
+.sidebar {
+    &__services {
+        &-item {
+            @include flexible();
+
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &-icon {
+            position: relative;
+            width: 28px;
+            height: 28px;
+            background: #E8EEFF;
+            border-radius: 4px;
+            @include font-size(10px);
+
+            & img {
+                @include center-element();
+            }
+        }
+
+        &-info {
+            margin-left: 10px;
+        }
+
+        &-title {
+            @include font-size(14px);
+            font-weight: 600;
+        }
+
+        &-desc {
+            @include font-size(12px);
+            font-weight: 500;
+            color: #B3B3B3;
+        }
+    }
+}

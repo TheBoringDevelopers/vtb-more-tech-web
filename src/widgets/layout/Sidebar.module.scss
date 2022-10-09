@@ -1,0 +1,133 @@
+:root{
+    --blue: #225AD6
+}
+.Sidebar{
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px 15px;
+    font-weight: 600;
+    color: #A3A3A3;
+    border-right: 1px solid rgba(20, 45, 64, 0.1);
+    transition-duration: 0.5s;
+    text-overflow: clip;
+
+    .logo{
+        width: 32px;
+        height: 32px;
+        margin-left: 10px;
+    }
+    &_bottom{
+        .notification:hover{
+            background-color: #fff;
+        }
+    }
+    .user {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        img {
+            border: 3px solid transparent;
+        }
+
+        h3{
+            color: #142D40;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        &__active {
+            img {
+                border: 3px solid #225AD6;
+            }
+            &::before{
+                content: url('/icons/active.svg');
+                position: absolute;
+                left: 0;
+                transform: translateY(4px);
+            }
+        }
+    }
+
+    .link p, .text {
+        transition-duration: 0.3s;
+    }
+
+    .text{
+        p{
+            min-width: 100px;
+        }
+    }
+    .notification{
+        width: 100%;
+        height: 42px;
+        img{
+            height: 21px;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        background-color: #fff;
+    }
+    &_hidden{
+        width: 88px;
+        height: 100%;
+        background-color: #fff;
+
+        .link p, .text {
+            opacity: 0;
+        }
+
+        .Sidebar_menu .link {
+            display: flex;
+            align-items: center;
+            height: 42px;
+        }
+        .logo{
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+.Sidebar_menu{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.Sidebar .link {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: 42px;
+    padding: 0 18px;
+    border-radius: 9px;
+    &:hover{
+        background-color: rgb(248, 246, 246, 0.65);
+    }
+    p{
+        min-width: 220px;
+    }
+}
+.Sidebar_menu .active {
+    color: var(--blue);
+    height: 42px;
+    padding: 0 18px;
+    background-color: #F8F8F8;
+    &::before{
+        content: url('/icons/active.svg');
+        position: absolute;
+        left: 0;
+        transform: translateY(4px);
+    }
+}

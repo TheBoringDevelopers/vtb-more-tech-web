@@ -1,0 +1,33 @@
+/* ---- Colors ---- */
+$theme-color: #0542EE;
+
+/* ---- Body & Section ---- */
+$body-font-family: 'Gilroy';
+$body-font-weight: 400;
+$body-font-size: 18px;
+$body-text-color: #000;
+
+$section-padding-bottom: 50px;
+
+/* ---- Background ---- */
+$bg-overlay-rgba: rgba(0, 0, 0, 0.7);
+$bg-propeties: no-repeat center top  / cover;
+
+/* ---- Transition ---- */
+$transition-property: all;
+$transition-animation: ease;
+$transition-delay: 0.3s;
+
+/* ---- Hovers ---- */
+$link-hover-opacity: 0.7;
+
+/* ---- Break Points ---- */
+$phone: 480;
+$phablet: 576;
+$tablet: 768;
+$tablet-large: 992;
+$laptop: 1200;
+$desktop: 1400;
+
+/* ---- Anchors ---- */
+$anchor-scroll-margin: 100px;

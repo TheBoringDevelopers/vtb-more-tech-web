@@ -1,0 +1,60 @@
+/* ---- Specification ---- */
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-margin-top: $anchor-scroll-margin;
+}
+
+body {
+    @include reset-indents();
+    font-family: $body-font-family, sans-serif;
+    font-weight: $body-font-weight;
+    font-size: $body-font-size;
+    color: $body-text-color;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+section {
+    padding-bottom: $section-padding-bottom;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include reset-indents();
+    font-weight: 700;
+}
+
+p {
+    @include reset-indents();
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+ul, li {
+    @include reset-indents();
+    display: block;
+}
+
+/* ---- Scroll ---- */
+::-webkit-scrollbar-track {
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+	background-color: $theme_color;
+}

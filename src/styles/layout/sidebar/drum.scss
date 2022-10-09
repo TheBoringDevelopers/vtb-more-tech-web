@@ -1,0 +1,30 @@
+/* ---- Drum ---- */
+.sidebar {
+    &__drum {
+        @include flexible();
+        justify-content: space-between;
+        padding: 14px;
+    
+        &-content {
+            @include flexible();
+        }
+    
+        &-info {
+            margin-left: 12px;
+        }
+    
+        &-desc {
+            @include font-size(12px);
+            font-weight: 500;
+        }
+    
+        &-title {
+            @include font-size(16px);
+            font-weight: 700;
+        }
+    
+        &-btn {
+            width: 82px;
+        }
+    }
+}
